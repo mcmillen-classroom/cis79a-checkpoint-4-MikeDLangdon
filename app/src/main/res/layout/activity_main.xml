@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+
+    android:background="@drawable/zombi"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/score_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorScore"
+        android:layout_gravity="right|top"
+
+
+        />
+
+
+    <TextView
+        android:id="@+id/question_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+        android:background="@color/colorAccent"
+        android:textAlignment="center"
+
+    />
+
+    <!--For multiple choice-->
+    <LinearLayout
+        android:id="@+id/multiple_choice_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/a_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButton"/>
+        <Button
+            android:id="@+id/a_button_correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButtonCorrect"/>
+        <Button
+            android:id="@+id/a_button_incorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButtonIncorrect"/>
+
+        <Button
+            android:id="@+id/b_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButton"/>
+        <Button
+            android:id="@+id/b_button_correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButtonCorrect"/>
+        <Button
+            android:id="@+id/b_button_incorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButtonIncorrect"/>
+
+        <Button
+            android:id="@+id/c_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButton"/>
+        <Button
+            android:id="@+id/c_button_correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButtonCorrect"/>
+        <Button
+            android:id="@+id/c_button_incorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButtonIncorrect"/>
+
+    </LinearLayout>
+
+
+    <!--Layout for TF questions-->
+    <LinearLayout
+        android:id="@+id/true_false_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- True button -->
+        <Button
+            android:id="@+id/true_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fadingEdge="horizontal"
+            android:background="@color/colorButton"
+
+            android:text="@string/true_button"/>
+
+        <!--False button-->
+        <Button
+            android:id="@+id/false_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButton"
+            android:text="@string/false_button"/>
+
+
+    </LinearLayout>
+
+    <!--Layout for the fill the blank questions-->
+    <LinearLayout
+        android:id="@+id/fill_the_blank_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorScore"/>
+
+        <Button
+            android:id="@+id/check_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_button"/>
+
+        <Button
+            android:id="@+id/check_button_correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_button"
+            android:background="@color/colorButtonCorrect"/>
+
+        <Button
+            android:id="@+id/check_button_incorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_button"
+            android:background="@color/colorButtonIncorrect"/>
+
+    </LinearLayout>
+
+    <!-- For the Next and Previous buttons-->
+    <LinearLayout
+        android:id="@+id/next_and_previous_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/previous_button"
+            android:src="@drawable/arrow_left"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/next_button"
+            android:src="@drawable/arrow_right"/>
+
+    </LinearLayout>
+
+    <!-- For the hint button-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hint_button"
+            android:src="@drawable/hand_with_knife1"/>
+
+    </LinearLayout>
+
+    <!--Layout for the final page-->
+    <LinearLayout
+        android:id="@+id/final_page_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<TextView-->
+            <!--android:id="@+id/final_score_text_view"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/colorScore"-->
+            <!--android:layout_gravity="center|top"-->
+            <!--/>-->
+        <TextView
+            android:id="@+id/final_question_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/colorAccent"
+            android:textAlignment="center"
+            />
+        <Button
+            android:id="@+id/quit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButton"
+            android:text="@string/quit_button"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+

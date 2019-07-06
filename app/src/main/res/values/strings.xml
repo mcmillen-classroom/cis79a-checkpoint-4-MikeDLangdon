@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">A Horrible Quiz App</string>
+
+    <string name="true_button">True</string>
+    <string name="false_button">False</string>
+    <string name="previous_button">Previous</string>
+    <string name="next_button">Next</string>
+    <string name="hint_button">Hint</string>
+    <string name="check_button">Check it.</string>
+    <string name="quit_button">Kill the Quiz</string>
+
+
+    <string name="question_1">"In \'A Nightmare on Elm Street Part 4: The Dream Master\' the house the main character lived in had the address 1729 Elm Street."</string>
+    <string name="question_1_hint">"Hint: I bet it's the same address that's in part one."</string>
+
+    <string name="question_2">"In \'The Exorcist\' the name of the spirit Regan is chatting with on the Ouija board before she gets possessed is Captain Howdy."</string>
+    <string name="question_2_hint">"Hint: Don\'t make me spell it out for you."</string>
+
+    <string name="question_3">"In \'Pumpkinhead\' the monster is a demon named Pazuzu."</string>
+    <string name="question_3_hint">"Hint: Maybe you should ask Father Merrin."</string>
+
+    <string name="question_4">"In \'The Texas Chainsaw Massacre Part 2\' the protagonist is named Lefty McEnright."</string>
+    <string name="question_4_hint">"Hint:  I mean, that would be ridiculous, right?."</string>
+
+    <string name="question_5">"In the first \'Return of the Living Dead\' the zombies do a choreographed dance a la \'Thriller\'."</string>
+    <string name="question_5_hint">"Hint: We\'re talking about the first one here, with the punk rockers."</string>
+
+
+    <string name="question_6">"What movie features an underwater scene wherein a zombie fights a shark?"</string>
+    <string name="question_6_hint">"Hint:  The Italian version has a \'2\' in the title, even though it\'s not a sequel."</string>
+    <string-array name="question_6_answers">
+        <item>"Zombi 2"</item>
+        <item>"Zombie"</item>
+        <item>"Lucio Fulci\'s Zombie"</item>
+        <item>"Lucio Fulcis Zombie"</item>
+        <item>"Fulci\'s Zombie"</item>
+        <item>"Fulcis Zombie"</item>
+    </string-array>
+
+    <string name="question_7">"Which of the \'Halloween\' films was inexplicably bereft of Michael Myers?"</string>
+    <string name="question_7_hint">"Hint:  Silver Shamrock"</string>
+    <string-array name="question_7_answers">
+        <item>"Part 4"</item>
+        <item>"Part 2"</item>
+        <item>"Part 3"</item>
+    </string-array>
+
+    <string name="question_last">"There are no more questions.  Click the button below to exit the app."</string>
+    <string name="question_last_hint">"Here\'s a hint:  Click the button to exit the app, and go watch more horror movies."</string>
+
+
+</resources>
